@@ -16,11 +16,9 @@
 " surround with tag <select>S<tag>
 " change the surrounding tag cst<tag>
 
-
 """
 " Activate bundles (pathogen)
-call pathogen#runtime_append_all_bundles()
-
+call pathogen#infect()
 
 """
 " Generic stuff
