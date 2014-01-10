@@ -13,36 +13,36 @@ snippet utf8
 	# -*- coding: utf-8 -*-
 snippet ZopeMessageFactory
 	from zope.i18nmessageid import MessageFactory as ZopeMessageFactory
-	_ = ZopeMessageFactory("${1}")
+	_ = ZopeMessageFactory('${1}')
 snippet setup.py
 	from setuptools import setup, find_packages
 
 	setup(
-		name="${1:}",
-		version="1.0.0",
+		name='${1:}',
+		version='1.0.0',
 		description="${2}",
-		long_description=(open("README.txt").read() + "\n" +
-		                  open("CHANGES.txt").read()),
+		long_description=(open('README.rst').read() + '\n' +
+		                  open('CHANGES.rst').read()),
 		# Get more strings from
 		# http://pypi.python.org/pypi?%3Aaction=list_classifiers
 		classifiers=[
-			"Programming Language :: Python",
+			'Programming Language :: Python',
 		],
-		keywords="",
-		author="Asko Soukka",
-		author_email="asko.soukka@iki.fi",
-		url="https://github.com/datakurre/${3:$1}/",
-		license="GPL",
-		packages=find_packages("src", exclude=["ez_setup"]),
-		package_dir={"": "src"},
-		namespace_packages=["${4:$1}"],
+		keywords='',
+		author='Asko Soukka',
+		author_email='asko.soukka@iki.fi',
+		url='https://github.com/datakurre/${3:$1}/',
+		license='GPL',
+		packages=find_packages('src', exclude=['ez_setup']),
+		package_dir={'': 'src'},
+		namespace_packages=['${4:$1}'],
 		include_package_data=True,
 		zip_safe=False,
 		install_requires=[
-			"setuptools",
+			'setuptools',
 		],
-		extras_require={"test": [
-			"plone.app.testing",
+		extras_require={'test': [
+			'plone.app.testing',
 		]},
 		entry_points="""
 		# -*- Entry points: -*-
@@ -53,7 +53,7 @@ snippet setup.py
 snippet namespace
 	# See http://peak.telecommunity.com/DevCenter/setuptools#namespace-packages
 	try:
-		__import__("pkg_resources").declare_namespace(__name__)
+		__import__('pkg_resources').declare_namespace(__name__)
 	except ImportError:
 		from pkgutil import extend_path
 		__path__ = extend_path(__path__, __name__)
