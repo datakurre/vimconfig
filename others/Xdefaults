@@ -1,5 +1,10 @@
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.antialias: true
+Xft.rgba: sub-pixel
+Xft.dpi: 150
 xterm*maximized: true
 xterm*background: #1c1c1c
-xterm*foreground: lightgrey
+xterm*foreground: #95a5a6
 xterm*scrollBar: off
-xterm*faceName: MesloLGS:Regular:size=20
+xterm*faceName: MesloLGS:Regular:size=13
